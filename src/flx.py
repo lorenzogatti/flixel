@@ -58,6 +58,7 @@ menu_state_class_template=Template("""package ${package}
 
 		override public function update():void
 		{
+            super.update();
 			if(FlxG.mouse.justPressed())
 				FlxG.switchState(${play_state_class});
 		}
